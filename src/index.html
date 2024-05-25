@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch  -->
+  <body>
+    <header class="text-gray-600 fixed top-0 z-10 w-full">
+      <div
+        class="w-full flex items-center justify-between md:px-32 px-8 py-[1rem] md:py-0"
+      >
+        <a class="title-font font-medium md:mt-8 text-white mb-4 md:mb-0">
+          <img
+            src="../asset/logo-white-1-150x150.png"
+            alt=""
+            class="h-16 w-16"
+          />
+        </a>
+        <nav
+          class="hidden md:flex text-white items-center text-xl justify-center space-x-6 mt-4"
+        >
+          <a class="mr-5">Home</a>
+          <a class="mr-5">Service</a>
+          <a class="mr-5">Contact</a>
+          <a class="mr-5">About</a>
+          <a class="mr-5 hover:bg-green-900 border-[1px] rounded-lg px-6 py-2"
+            >202-555-7890</a
+          >
+        </nav>
+        <div class="md:hidden">
+          <button class="outline-none mobile-menu-button btn">
+            <svg
+              class="w-10 h-10 text-white p-2 bg-green-700 rounded-full"
+              x-show="!showMenu"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              bg-indigo-500
+              rounded-full
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <ul
+        class="list absolute w-[28vh] h-[20vh] p-4 text-center justify-evenly right-4 flex flex-col text-xl md:hidden text-black bg-white"
+      >
+        <li><a class="bg-white hover:text-green-600">Home</a></li>
+        <li><a class="bg-white hover:text-green-600">Service</a></li>
+        <li><a class="bg-white hover:text-green-600">Contact</a></li>
+        <li><a class="bg-white hover:text-green-600">About</a></li>
+      </ul>
+    </header>
+
+    <section class="relative body-font w-full">
+      <img
+        class="lg:w-screen mb-20 md:h-screen h-[50vh] object-screen object-center rounded"
+        alt="hero"
+        src="../asset/1-home.jpg"
+      />
+      <div
+        class="w-full h-[50vh] md:h-screen flex flex-col md:py-24 items-center justify-center absolute top-0 left-0"
+      >
+        <div
+          class="flex flex-col justify-center items-center text-center w-full"
+        >
+          <h1
+            class="title-font text-cennter sm:w-1/2 justify-evenly sm:text-7xl text-3xl mb-8 font-semibold text-white"
+          >
+            Once you choose hope, anything is possible...
+          </h1>
+          <div class="flex justify-center">
+            <button
+              class="inline-flex text-white bg-green-700 border-0 py-3 px-12 rounded-lg focus:outline-none hover:bg-indigo-600 text-lg md:mt-8 justify-center text-center"
+            >
+              Get started
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="md:px-40 items-center">
+      <h6 class="text-center md:text-lg text-sm">
+        CERTIFIED WEB DESIGNER BASED IN OAKLAND, CALIFORNIA
+      </h6>
+      <h1 class="text-center md:text-6xl text-5xl font-normal mt-[30px]">
+        Problems I can help with
+      </h1>
+      <p class="flex justify-around">
+        <span class="flex h-[2px] w-24 bg-green-700 mt-8 mb-6"></span>
+      </p>
+      <div class="container px-8 mt-[24px]">
+        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+          <div class="p-6 md:w-1/3 h-full sm:mb-0 mb-6">
+            <div class="rounded-lg md:h-[70vh] h-[50vh] overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                src="../asset/2-home.jpg"
+              />
+            </div>
+            <h1
+              class="text-3xl left-0 font-medium title-font text-gray-900 mt-5"
+            >
+              Web Design
+            </h1>
+            <p class="text-2xl leading-relaxed mt-2">
+              Focus on how you can help and benefit your user. Use simple words
+              to avoid confusion.
+            </p>
+          </div>
+          <div class="p-6 md:w-1/3 h-full sm:mb-0 mb-6">
+            <div class="rounded-lg md:h-[70vh] h-[50vh] overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                src="../asset/3-home.jpg"
+              />
+            </div>
+            <h1 class="text-3xl font-medium title-font text-gray-900 mt-5">
+              Graphic Design
+            </h1>
+            <p class="text-2xl leading-relaxed mt-2">
+              Focus on how you can help and benefit your user. Use simple words
+              to avoid confusion.
+            </p>
+          </div>
+          <div class="p-6 md:w-1/3 h-full sm:mb-0 mb-6">
+            <div class="rounded-lg md:h-[70vh] h-[50vh] overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                src="../asset/4-home.jpg"
+              />
+            </div>
+            <h2 class="text-3xl font-medium title-font text-gray-900 mt-5">
+              Content Creation
+            </h2>
+            <p class="text-2xl leading-relaxed mt-2">
+              Focus on how you can help and benefit your user. Use simple words
+              to avoid confusion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="mt-20 flex flex-wrap p-12 w-full justify-center items-center bg-slate-100"
+    >
+      <div class="mt-6 flex justify-center w-full">
+        <img
+          src="../asset/5-home.jpg"
+          alt=""
+          class="w-[10vh] h-[10vh] rounded-full"
+        />
+      </div>
+      <div class="flex flex-col mt-2 text-center justify-evenly items-center">
+        <p>Ruth A. Flora</p>
+
+        <p class="text-red-900">♢♢♢♢♢</p>
+        <h1 class="flex md:text-[35px] sm:w-1/2 mt-8 text-[20px]">
+          You can showcase a client review here. Make it nice and short, then
+          use this button to send them to your reviews or services page.
+        </h1>
+        <button
+          class="inline-flex text-black border-black border-[2px] py-4 px-12 focus:outline-none hover:text-white hover:bg-green-800 rounded-lg mt-12 text-xl mb-12"
+        >
+          What My Client Say
+        </button>
+      </div>
+    </section>
+    <section class="body-font">
+      <div
+        class="flex md:px-20 md:py-20 md:flex-row flex-col md:justify-evenly"
+      >
+        <div class="md:p-8 lg:max-w-lg lg:w-full md:w-1/2 w-full mb-10 md:mb-0">
+          <img
+            class="mlobject-cover md:p-4 object-center rounded-2xl"
+            alt="hero"
+            src="../asset/6-home.jpg"
+          />
+          <p
+            class="title-font px-[40px] mt-[5px] md:w-6/7 text-center sm:text-[35px] text-2xl mb-4 text-gray-900"
+          >
+            Dragos Andrei Atudorei
+          </p>
+          <p
+            class="title-font px-[40px] mt-[20px] md:w-6/7 sm:text-[16px] md:text-[16px] text-center text-base font-medium text-gray-900"
+          >
+            WordPress Content Creator
+          </p>
+          <p
+            class="title-font px-[40px] mt-[3px] w-6/7 sm:text-[16px] text-center text-base font-medium text-gray-900"
+          >
+            Certified Web Designer
+          </p>
+          <p
+            class="title-font px-[40px] mt-[3px] w-6/7 sm:text-[16px] text-center text-base font-medium text-gray-900"
+          >
+            Incurable Perfectionist
+          </p>
+        </div>
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pl-8 md:pl-8 flex flex-col md:items-start md:text-left items-center text-center"
+        >
+          <p class="mt-12">WELCOME!</p>
+          <h1
+            class="title-font mt-8 md:w-4/5 sm:text-[40px] text-[25px] font-medium text-gray-900"
+          >
+            My name is Andrei and I am
+          </h1>
+          <h1
+            class="title-font mt-[2px] md:md:w-4/5 sm:text-[40px] space-y-44 text-[25px] mb-4 font-medium text-gray-900"
+          >
+            the creator of this template.
+          </h1>
+          <p
+            class="mt-[10px] md:mt-[18px] md:w-5/6 md:text-2xl leading-relaxed"
+          >
+            I gave it my all to make this the best design to start from.
+          </p>
+          <p
+            class="mt-[27px] md:mt-[32px] md:w-5/6 md:text-2xl leading-relaxed"
+          >
+            <span class="font-semibold">I named it Hope,</span> in honor of my
+            client who inspired me to make it – her middle name is Hope.
+          </p>
+          <p
+            class="mt-[27px] md:mt-[32px] md:w-5/6 md:text-2xl leading-relaxed"
+          >
+            For the first section at the top of the page, I recommend writing
+            something that will
+            <span class="font-semibold">pique the interest</span> of your target
+            audience. Make them curious to read more!
+          </p>
+          <p
+            class="mt-[27px] md:mt-[32px] md:w-5/6 md:text-2xl leading-relaxed"
+          >
+            These middle sections are the perfect place to introduce yourself,
+            and to perhaps start introducing
+            <span class="font-semibold">your services.</span>
+          </p>
+          <p
+            class="mt-[27px] md:mt-[32px] md:w-5/6 md:text-2xl leading-relaxed"
+          >
+            The last section below is great for a call to action.
+          </p>
+          <div class="md:flex mt-16 justify-center">
+            <button
+              class="md:inline-flex text-white bg-green-800 border-0 py-4 px-12 focus:outline-none hover:bg-green-900 rounded-lg text-lg"
+            >
+              See My Service
+            </button>
+            <button
+              class="md:ml-4 md:mt-0 mt-8 md:inline-flex text-gray-900 bg-gray-100 border-[2px] border-black py-[13px] px-[42px] md:py-4 md:px-12 focus:outline-none hover:bg-green-800 hover:text-white rounded-lg text-lg"
+            >
+              More About Me
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-20 md:mt-0 w-full">
+      <div class="flex flex-col text-center justify-center items-center w-full">
+        <img
+          src="../asset/7-home.jpg"
+          alt=""
+          class="md:h-[74vh] w-full h-[50vh]"
+        />
+        <h1 class="absolute z-10 flex flex-col">
+          <p class="text-white md:text-7xl text-4xl -mt-20 font-sans">
+            Insert a call to action
+          </p>
+          <p class="text-white md:text-2xl text-sm font-sans mt-[25px]">
+            Think of what you want your visitor to do next.
+          </p>
+          <p class="text-white md:text-2xl text-sm font-sans mt-[8px]">
+            Maybe they should contact you?
+          </p>
+        </h1>
+        <button
+          class="absolute md:mt-60 mt-40 md:inline-flex text-white border-white border-2 py-[10px] px-12 md:py-[12px] md:px-12 focus:outline-none hover:bg-green-900 rounded-lg text-lg"
+        >
+          Get In Touch
+        </button>
+      </div>
+    </section>
+    <section class="md:flex-row flex-col">
+      <div
+        relative
+        class="flex md:justify-evenly justify-center md:flex-row flex-col"
+      >
+        <ul
+          class="md:left-0 md:mt-[26px] md:ml-1 ml-24 mt-8 md:absolute w-[20vh] h-[15vh] text-center text-justify items-start px-20 md:flex text-lg text-black bg-white"
+        >
+          <li class="md:p-4 mb-[5px]">
+            <a class="md:bg-white hover:text-green-600">HOME</a>
+          </li>
+          <li class="md:p-4 mb-[5px]">
+            <a class="md:bg-white hover:text-green-600">SERVICE</a>
+          </li>
+          <li class="md:p-4 mb-[5px]">
+            <a class="md:bg-white hover:text-green-600">CONTACT</a>
+          </li>
+          <li class="md:p-4 mb-[5px]">
+            <a class="md:bg-white hover:text-green-600">ABOUT</a>
+          </li>
+        </ul>
+        <img
+          src="../asset/logo-black-1.png"
+          alt=""
+          class="md:absolute items-center md:ml-1 ml-44 justify-center mt-[20px] h-16 w-16"
+        />
+        <p
+          class="md:absolute md:right-0 md:ml-1 ml-28 items-center mt-[35px] mr-16 md:mb-1 mb-8"
+        >
+          © 2024 Hope Starter Design
+        </p>
+      </div>
+    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerBtn = document.querySelector(".btn");
+        hamburgerBtn.addEventListener("click", function () {
+          const dropdownMenu = document.querySelector(".list");
+          dropdownMenu.classList.toggle("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
