@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch  -->
+  <body>
+    <header class="text-gray-600 fixed top-0 z-10 w-full">
+      <div
+        class="w-full flex items-center justify-between md:px-32 px-8 py-[1rem] md:py-0"
+      >
+        <a class="title-font font-medium md:mt-8 text-white mb-4 md:mb-0">
+          <img src="asset/logo-white-1-150x150.png" alt="" class="h-16 w-16" />
+        </a>
+        <nav
+          class="hidden md:flex text-white items-center text-xl justify-center space-x-6 mt-4"
+        >
+          <a class="mr-5">Home</a>
+          <a class="mr-5">Service</a>
+          <a class="mr-5">Contact</a>
+          <a class="mr-5">About</a>
+          <a class="mr-5 hover:bg-green-900 border-[1px] rounded-lg px-6 py-2"
+            >202-555-7890</a
+          >
+        </nav>
+        <div class="md:hidden">
+          <button class="outline-none mobile-menu-button btn">
+            <svg
+              class="w-10 h-10 text-white p-2 bg-green-700 rounded-full"
+              x-show="!showMenu"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              bg-indigo-500
+              rounded-full
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <ul
+        class="list hidden absolute w-[20vh] h-[20vh] p-4 text-center justify-evenly right-4 flex-col text-xl md:hidden text-black bg-white"
+      >
+        <li><a class="bg-white hover:text-green-600">Home</a></li>
+        <li><a class="bg-white hover:text-green-600">Service</a></li>
+        <li><a class="bg-white hover:text-green-600">Contact</a></li>
+        <li><a class="bg-white hover:text-green-600">About</a></li>
+      </ul>
+    </header>
+
+    <section class="relative body-font w-full h-[60vh]">
+      <img
+        class="lg:w-screen mb-20 md:h-[60vh] h-[48vh] object-screen object-center rounded"
+        alt="hero"
+        src="asset/1-about.jpg"
+      />
+      <div
+        class="w-full h-[50vh] md:h-screen flex flex-col md:py-24 items-center justify-center md:-mt-36 absolute top-0 left-0"
+      >
+        <div class="flex flex-col items-center text-center w-full">
+          <h1
+            class="title-font text-cennter sm:w-2/3 justify-evenly text-7xl mb-8 font-medium text-white"
+          >
+            about us
+          </h1>
+        </div>
+      </div>
+    </section>
+    <section class="mb-12 md:mb-12 body-font">
+      <div
+        class="flex md:px-20 md:py-20 md:flex-row flex-col md:justify-evenly"
+      >
+        <div class="md:px-8 lg:max-w-lg lg:w-full md:w-1/2 w-full mb-4 md:mb-0">
+          <img
+            class="object-cover  object-center px-8 rounded-2xl md:py-8"
+            alt="hero"
+            src="asset/6-home.jpg"
+          />
+          
+        
+        </div>
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pl-8 md:pl-4 px-12 flex flex-col md:items-start md:text-left items-center text-center"
+        >
+          <h1
+            class="title-font md:mb-12 mt-4 md:w-4/5 w-full sm:text-[40px] text-[30px] font-medium text-gray-900"
+          >
+          I made this design specifically for our step by step tutorial.
+          </h1>
+        
+          <p
+            class="mt-[25px] md:mt-[12px] md:w-5/6 text-left md:text-[22px] leading-relaxed"
+          >It allows me to show you
+            <span class="font-semibold">how easy it can be</span> to make an amazing website – by simply following along with me..
+          </p>
+          <p
+            class="mt-[25px] md:mt-[32px] text-left md:w-5/6 md:text-[22px] leading-relaxed"
+          >
+          We’ve made the design
+            <span class="font-semibold">super easy to adapt</span> to any industry, so you can use it to build any type of website.
+          </p>
+          <p
+            class="mt-[25px] md:mt-[32px] text-left md:w-5/6 md:text-[22px] leading-relaxed"
+          >
+          It is also
+          This way you can For example, you can change the colors and fonts sitewide with a single click.
+          </p>
+          <p
+            class="mt-[25px] md:mt-[32px] text-left md:w-5/6 md:text-[22px] leading-relaxed"
+          >
+          This way you can<span class="font-semibold">try different designs fast</span>– and build an amazing website in hours, instead of months.
+          </p>
+        
+      </div>
+    </section>
+    <section class=" items-center">
+    <h1 class="text-center md:ml-40 px-8 md:text-5xl text-2xl md:w-3/4 font-normal mt-[10px] mb-12 md:mb-4">
+      I gave it my all to try and make this the best possible design that you can start </h1></section>
+      <section class="mb-12 md:mb-12 body-font">
+        <div
+          class="flex md:px-20 md:py-20 md:flex-row flex-col md:justify-evenly"
+        >
+          <div class="md:px-8 lg:max-w-lg lg:w-full md:w-1/2 w-full mb-10 md:mb-0">
+            <img
+              class="object-cover md:p-4 object-center px-8 rounded-2xl "
+              alt="hero"
+              src="asset/2-about.jpg"
+            />
+            
+          
+          </div>
+          <div
+            class="lg:flex-grow md:w-1/2 lg:pl-8 md:pl-4 px-12 flex flex-col md:items-start md:text-left items-center text-center"
+          >
+            <h1
+              class="title-font mt-4 md:w-4/5 w-full sm:text-[40px] text-[30px] font-medium text-gray-900"
+            >
+            I love nature, and so Hope is a design inspired by nature.
+            </h1>
+            <p
+              class="mt-[25px] md:mt-[12px] md:w-5/6 text-left md:text-[22px] leading-relaxed"
+            >It allows me to show you
+              <span class="font-semibold">how easy it can be</span> to make an amazing website – by simply following along with me..
+            </p>
+            <p
+              class="mt-[25px] md:mt-[32px] text-left md:w-5/6 md:text-[22px] leading-relaxed"
+            >
+            We’ve made the design
+              <span class="font-semibold">super easy to adapt</span> to any industry, so you can use it to build any type of website.
+            </p>
+            <p
+              class="mt-[25px] md:mt-[32px] text-left md:w-5/6 md:text-[22px] leading-relaxed"
+            >
+            It is also
+            This way you can For example, you can change the colors and fonts sitewide with a single click.
+            </p>
+            <p
+              class="mt-[25px] md:mt-[32px] text-left md:w-5/6 md:text-[22px] leading-relaxed"
+            >
+            This way you can<span class="font-semibold">try different designs fast</span>– and build an amazing website in hours, instead of months.
+            </p>
+          
+        </div>
+      </section>
+      <section
+      class="mt-20 md:mt-0 flex flex-wrap p-12 w-full justify-center items-center bg-slate-100"
+    >
+      <div class="mt-6 flex justify-center w-full">
+        <img
+          src="asset/3-about.jpg"
+          alt=""
+          class="w-[10vh] h-[10vh] rounded-full"
+        />
+      </div>
+      <div class="flex flex-col mt-2 text-center justify-evenly items-center">
+        <p>Astrid Hartman</p>
+
+        <p class="text-red-900">♢♢♢♢♢</p>
+        <h1 class="flex md:text-[35px] sm:w-1/2 mt-8 text-[20px]">
+          You can showcase a client review here. Make it nice and short, then
+          use this button to send them to your reviews or services page.
+        </h1>
+        <button
+          class="inline-flex text-black border-black border-[2px] py-4 px-12 focus:outline-none hover:text-white hover:bg-green-800 rounded-lg mt-12 text-xl mb-12"
+        >
+          What My Client Say
+        </button>
+      </div>
+    </section>
+    <section class="md:flex-row flex-col">
+      <div
+        relative
+        class="flex md:justify-evenly justify-center md:flex-row flex-col"
+      >
+        <ul
+          class="md:left-0 md:mt-[26px] md:ml-1 ml-24 mt-8 md:absolute w-[20vh] h-[15vh] text-center text-justify items-start px-20 md:flex text-lg text-black bg-white"
+        >
+          <li class="md:p-4 mb-[5px]">
+            <a class="md:bg-white hover:text-green-600">HOME</a>
+          </li>
+          <li class="md:p-4 mb-[5px]">
+            <a class="md:bg-white hover:text-green-600">SERVICE</a>
+          </li>
+          <li class="md:p-4 mb-[5px]">
+            <a class="md:bg-white hover:text-green-600">CONTACT</a>
+          </li>
+          <li class="md:p-4 mb-[5px]">
+            <a class="md:bg-white hover:text-green-600">ABOUT</a>
+          </li>
+        </ul>
+        <img
+          src="asset/logo-black-1.png"
+          alt=""
+          class="md:absolute items-center md:ml-1 ml-44 justify-center mt-[20px] h-16 w-16"
+        />
+        <p
+          class="md:absolute md:right-0 md:ml-1 ml-24 items-center mt-[35px] mr-16 md:mb-1 mb-8 w-auto"
+        >
+          © 2024 Hope Starter Design
+        </p>
+      </div>
+    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerBtn = document.querySelector(".btn");
+        hamburgerBtn.addEventListener("click", function () {
+          const dropdownMenu = document.querySelector(".list");
+          dropdownMenu.classList.toggle("hidden");
+        });
+      });
+    </script>
+
+  </body>
+</html>
